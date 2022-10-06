@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Digital_Font";
+    src: url(font/digital-7/digital-7.ttf);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #121213;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    width: 500px;
+    height: 280px;
+    margin: 0px 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #f021b2, rgb(165, 165, 165));
+}
+
+.card .map {
+    position: absolute;
+    width: 100%;
+    opacity: 0.8;
+    user-select: none;
+    pointer-events: none;
+}
+
+.card .bank {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 20%;
+    z-index: 999;
+    user-select: none;
+    pointer-events: none;
+}
+
+.card .chip {
+    position: absolute;
+    width: 60px;
+    height: 45px;
+    background: #e9df4e;
+    top: 60px;
+    left: 25px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card .chip h6:nth-child(1) {
+    width: 25px;
+    height: 15px;
+    border: 1px solid #000;
+    margin-top: -1px;
+    border-top: 0px;
+    border-left: 0px;
+}
+
+.card .chip h6:nth-child(2) {
+    width: 25px;
+    height: 10px;
+    border: 1px solid #000;
+    margin-top: -1px;
+    border-top: 0px;
+    border-left: 0px;
+}
+
+.card .chip h6:nth-child(3) {
+    width: 25px;
+    height: 10px;
+    border: 1px solid #000;
+    margin-top: -1px;
+    border-top: 0px;
+    border-left: 0px;
+}
+
+.card .chip h6:nth-child(4) {
+    width: 25px;
+    height: 18px;
+    border: 1px solid #000;
+    margin-top: -1px;
+    border-top: 0px;
+    border-left: 0px;
+}
+
+.card .chip h6:nth-child(5) {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    border: 1px solid #000;
+    border-bottom: 1px solid #000;
+    top: 0px;
+    left: 25px;
+}
+
+.card .chip h6:nth-child(6) {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    border: 1px solid #000;
+    border-bottom: 1px solid #000;
+    top: 10px;
+    left: 25px;
+}
+
+.card .chip h6:nth-child(7) {
+    position: absolute;
+    width: 25px;
+    height: 10px;
+    border: 1px solid #000;
+    border: 1px solid #000;
+    top: 15px;
+    left: 45px;
+}
+
+.card .chip h6:nth-child(8) {
+    position: absolute;
+    width: 25px;
+    height: 10px;
+    border: 1px solid #000;
+    border-top: 0px;
+    top: 25px;
+    left: 45px;
+}
+
+.card .chip h6:nth-child(9) {
+    position: absolute;
+    width: 25px;
+    height: 15px;
+    border: 1px solid #000;
+    border-top: 0px;
+    top: 35px;
+    left: 45px;
+}
+
+.card .number {
+    position: absolute;
+    width: 250px;
+    height: 20px;
+    top: 130px;
+    left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .number h6 {
+    color: #fff;
+    font-size: 25px;
+    font-family: Digital_Font;
+    letter-spacing: 3px;
+}
+
+.card .number h6:first-child {
+    user-select: none;
+}
+
+.card .number h6:last-child {
+    letter-spacing: 10px;
+}
+
+.card .wave {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 62px;
+    left: 100px;
+    user-select: none;
+    pointer-events: none;
+}
+
+.card .ex_date {
+    position: absolute;
+    top: 165px;
+    left: 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.card .ex_date span {
+    font-size: 9px;
+    font-weight: 600;
+    line-height: 10px;
+    user-select: none;
+}
+
+.card .ex_date h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 12px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.card .ex_date h3 span {
+    font-size: 12px;
+    margin: 0px 2px;
+}
+
+.card .holder {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    top: 195px;
+    left: 25px;
+}
+
+.card .holder span {
+    font-size: 9px;
+    font-weight: 600;
+    line-height: 10px;
+    user-select: none;
+}
+
+.card .holder h2 {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #fff;
+    line-height: 12px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.card .cvv {
+    position: absolute;
+    color: #fff;
+    top: 230px;
+    left: 25px;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.card .cvv span {
+    user-select: none;
+}
+
+.card .cvv h5 {
+    font-size: 14px;
+    margin-left: 5px;
+    background: #121213;
+    padding: 1px 10px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+
+.card .visa_debit {
+    user-select: none;
+    pointer-events: none;
+}
+
+.card .visa_debit .visa {
+    position: absolute;
+    top: 200px;
+    right: 5px;
+    width: 110px;
+    height: 80px;
+}
+
+.card .visa_debit .debit {
+    position: absolute;
+    top: 250px;
+    right: 25px;
+    color: #fff;
+}
